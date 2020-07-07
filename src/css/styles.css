@@ -3,16 +3,19 @@ body{
 }
 /*--//links--*/
 
-.top{
-float: left;
-font-size: 30px;
-}
+
 .links{
 	width: 100%;
 	height: 20px;
 	margin-top:15px;
-	float: right;
 	color: white;
+}
+.top{
+	padding-left: 30px;
+float: left;
+font-size: 50px;
+font-family: 'Aladin';
+
 }
 .mediashare{
 	border-radius: 3%;
@@ -42,7 +45,8 @@ font-size: 30px;
 }
 /*--//links--*/
 
-.container{
+/*.container{
+	float: right;
     margin-top: 80px;
     width:380px;
     position: absolute;
@@ -95,4 +99,61 @@ font-size: 30px;
 .content ul{
     padding:0;
     margin:0;
+}
+*/
+.content1{
+	width :1050px;
+	height: 600px;
+	margin: 40px auto;
+	margin-bottom: 0px;
+	color: white;
+	border-radius: 10%;
+
+}
+.app{
+
+	align-content: center;
+	align-self: center;
+	width: 380px;
+	height: 600px;
+	background-color: #3E4049;
+	color: white;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 1px 1px 8px 8px black;
+}
+.header{
+    width: 380px;
+    height:200px;
+    background-image: url('bg-book.jpg');
+   
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i{
+    font-size: 30px;
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Aladin';
 }
