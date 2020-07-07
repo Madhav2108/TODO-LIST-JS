@@ -2,8 +2,13 @@ body{
 	background-image: url(bg-body.jpg);
 }
 /*--//links--*/
+
+.top{
+float: left;
+font-size: 30px;
+}
 .links{
-	width: 1000px;
+	width: 100%;
 	height: 20px;
 	margin-top:15px;
 	float: right;
@@ -13,6 +18,7 @@ body{
 	border-radius: 3%;
 	/*ox-shadow: 1px 1px 8px 8px #212F3C;*/
 	color: white;
+	float: right;
    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
 }
 #gt:hover
@@ -37,19 +43,17 @@ body{
 /*--//links--*/
 
 .container{
-	width: 380px;
-	margin-top: 80px;
-	float: left;
-	color: white;
-
-	position: relative;
-	border-radius: 5px;
-	box-shadow: 1px 1px 8px 8px black;
+    margin-top: 80px;
+    width:380px;
+    position: absolute;
+    align-self: center;
+    align-content: center;
 }
 .header{
     width: 380px;
     height:200px;
-    background-image: url(bg-book.jpg);
+    background-image: url('bg-book.jpg');
+   
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
     position: relative;
@@ -77,4 +81,18 @@ body{
     color: #FFF;
     font-size: 25px;
     font-family: 'Titillium Web', sans-serif;
+}
+.content{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #FFF;
+    overflow: auto;
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
 }
