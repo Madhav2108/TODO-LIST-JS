@@ -116,7 +116,7 @@ font-family: 'Aladin';
 	align-self: center;
 	width: 380px;
 	height: 610px;
-	background-color: #3E4049;
+	background-color: black;
 	color: white;
 	margin: 0 auto;
 	top: 20px;
@@ -127,8 +127,8 @@ font-family: 'Aladin';
 .header{
     width: 380px;
     height:200px;
-    background-image: url('bg-book.jpg');
-   
+    background-image: url(new.jpg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
     position: relative;
@@ -154,15 +154,15 @@ font-family: 'Aladin';
     bottom: 10px;
     left: 10px;
     color: #FFF;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Aladin';
 }
 .content{
     width:380px;
     height: 350px;
     max-height:350px;
-    background-image: url('list-bg.jpg');
-    background-size: 100% 200%;
+    background-image: url(line.jpg);
+    background-size: 100% 100%;
     overflow: auto;
 }
 .content::-webkit-scrollbar { 
@@ -202,7 +202,7 @@ font-family: 'Aladin';
     font-size: 20px;
     left:50px;
     top:5px;
-    background-color: #FFF;
+    background-color: transparent;
     max-width:285px;
 }
 .lineThrough{
@@ -225,12 +225,14 @@ font-family: 'Aladin';
     width: 360px;
     height:40px;
     padding: 10px;
+    background-color: black;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
 .add-to-do i{
     position: absolute;
     font-size: 40px;
     color: #4162f6;
+     background-color: black;
 }
 
 .add-to-do input{
@@ -238,8 +240,9 @@ font-family: 'Aladin';
     left: 50px;
     height: 35px;
     width: 310px;
-    background-color: transparent;
+    background-color: black;
     border: none;
+    color: white;
     font-size: 20px;
     padding-left:10px;
 }
@@ -261,6 +264,7 @@ font-family: 'Aladin';
 .add-to-do input:-moz-placeholder { /* Firefox 18- */
     color: #4162f6;
     font-family: 'Aladin';
+     background-color: black;
     font-size: 20px;
 }
 

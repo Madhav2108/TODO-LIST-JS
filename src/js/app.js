@@ -33,7 +33,6 @@ clear.addEventListener("click", function(){
     location.reload();
 });
 
-// Show todays date
 const options = {weekday : "long", month:"short", day:"numeric"};
 const today = new Date();
 
@@ -63,7 +62,7 @@ document.addEventListener("keyup",function(even){
     if(event.keyCode == 13){
         const toDo = input.value;
         
-        // if the input isn't empty
+       
         if(toDo){
             addToDo(toDo, id, false, false);
             
@@ -74,7 +73,6 @@ document.addEventListener("keyup",function(even){
                 trash : false
             });
             
-            // add item to localstorage ( this code must be added where the LIST array is updated)
             localStorage.setItem("TODO", JSON.stringify(LIST));
             
             id++;
@@ -90,3 +88,22 @@ function completeToDo(element){
     
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
+
+function removeToDo(element){
+    element.parentNode.parentNode.removeChild(element.parentNode);
+    
+    LIST[element.id].trash = true;
+}
+
+list.addEventListener("click", function(event){
+    const element = event.target; 
+    const elementJob = element.attributes.job.value;
+    
+    if(elementJob == "complete"){
+        completeToDo(element);
+    }else if(elementJob == "delete"){
+        removeToDo(element);
+    }
+    
+    localStorage.setItem("TODO", JSON.stringify(LIST));
+});
