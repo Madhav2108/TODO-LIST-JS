@@ -161,7 +161,9 @@ font-family: 'Aladin';
     width:380px;
     height: 350px;
     max-height:350px;
-    background-image: url(line.jpg);
+    /*
+    background-image: url(line.jpg);*/
+    background-color: black;
     background-size: 100% 100%;
     overflow: auto;
 }
@@ -176,6 +178,7 @@ font-family: 'Aladin';
     width:380px;
     height: 45px;
     min-height: 45px;
+    color:white;
     position: relative;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     list-style: none;
@@ -226,6 +229,7 @@ font-family: 'Aladin';
     height:40px;
     padding: 10px;
     background-color: black;
+    opacity: 0.8;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
 .add-to-do i{
